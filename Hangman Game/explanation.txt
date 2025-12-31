@@ -1,0 +1,29 @@
+Imported a module named random, which helps in selecting a random word from the list items.
+
+Created a list named words to store predefined words that can be used in the Hangman game.
+
+Used random.choice(words) to randomly select one word from the list and store it in the variable secret_word.
+
+Created a list named guessed_word that contains underscores (_) equal to the number of letters in the selected word.
+This is used to hide the word from the player.
+
+Initialized a variable attempts with the value 6, which represents the maximum number of wrong guesses allowed.
+
+Displayed a welcome message to the user and printed the initial hidden word using underscores.
+
+Used a while loop that runs as long as the number of attempts is greater than zero.
+
+Took a letter input from the user using the input() function.
+
+Checked whether the guessed letter exists in the secret word.
+
+If the guessed letter is present in the word, a for loop is used to check each position of the word and reveal the correct letter in the hidden word.
+
+If the guessed letter is not present in the word, the number of attempts is decreased by one.
+
+Displayed the updated word after each guess along with the remaining attempts.
+
+Checked whether there are any underscores left in the guessed word.
+If no underscores remain, the game ends because the user has guessed the word correctly.
+
+After the loop ends, the program checks whether the user has won or lost and displays the final result along with the correct word
